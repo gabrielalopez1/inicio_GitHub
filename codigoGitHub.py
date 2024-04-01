@@ -21,4 +21,23 @@ camisetas = {
     4: ["cuello V", "lila", "15"]
 }
 
+print("ingrese los siguientes datos")
+nombres = input("ingrese nombres y apellidos: ")
+while True:
+    try:
+        id = int(input("ingrese su numero de identificación: "))
+    except ValueError:
+        print("por favor ingrese valores numéricos y sin espacios")
+        continue
+    break
+
+direccion = input("ingrese su direccion: ")
+while True:
+    try:
+        telefono = int(input("ingrese su numero de telefono celular: "))
+    except ValueError:
+            print("por favor ingrese valores numéricos y sin espacios")
+            continue
+    break
+
 
