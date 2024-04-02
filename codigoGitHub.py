@@ -66,4 +66,10 @@ while True:
     else:
         break 
 
+print("\nDetalle de la compra:")
+for i in compras:
+    print(f"Producto: {i[0]}, Color: {i[1]}, Precio: ${i[2]}")
+print(f"Total de la compra: ${total_compra}")
+
+
 
