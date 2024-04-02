@@ -40,4 +40,30 @@ while True:
             continue
     break
 
+while True:
+    print("'\ningrese el articulo que desea llevar: ")
+    menu = input("1. camisetas\n2. jeans\n3. zapatos\n")
+    if menu == "1":
+        articulos = camisetas
+    elif menu == "2":
+        articulos = jeans
+    elif menu == "3":
+        articulos = zapatos
+    else:
+        print("opcion de producto no válida, ingrese nuevamente ")
+        continue      
+    print("articulos disponibles")
+    for clave, producto in articulos.items():
+        print(f"{clave}: {producto[0]} - {producto[1]} - ${producto[2]}")
+    opcion = int(input("Seleccione un producto: "))
+    if opcion in articulos:
+        cont += 1
+        if cont <= 3:
+            compras.append(articulos[opcion])
+            total_compra += articulos[opcion][2]                                 
+        else:
+            break
+    else:
+        break 
+
 
