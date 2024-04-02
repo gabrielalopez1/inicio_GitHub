@@ -71,5 +71,9 @@ for i in compras:
     print(f"Producto: {i[0]}, Color: {i[1]}, Precio: ${i[2]}")
 print(f"Total de la compra: ${total_compra}")
 
+print("\n¿Desea hacer otra compra?")
+salida = input("1. sí\n2. no\n")
+if salida != 1:
+    print("gracias por tu compra :)")
 
 
